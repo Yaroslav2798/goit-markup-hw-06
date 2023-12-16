@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- шапка веб сторінки -->
-    <!--<header class="header-container-box">
+    <header class="header-container-box">
       <div class="container header-container">
         <nav class="nav-link">
           <a href="./index.html" class="logo-web"
@@ -59,19 +59,19 @@
           </ul>
         </address>
       </div>
-    </header>-->
+    </header>
 
     <!--основний вміст-->
-    <!--<main>
+    <main>
       <section class="section-hero section">
         <div class="container">
           <h1 class="hero">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
-      </section>-->
+      </section>
 
-    <!--Особливі критерії  -->
-    <!--<section class="section section-two">
+      <!--Особливі критерії -->
+      <section class="section section-two">
         <div class="container">
           <h2 class="title visually-hidden">Advantages</h2>
           <ul class="advantages-list excellence-list">
@@ -128,10 +128,10 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
-    <!--КОМАНДА-->
-    <!--<section class="team section">
+      <!--КОМАНДА-->
+      <section class="team section">
         <div class="container team-container">
           <h2 class="title our-team">Our Team</h2>
           <ul class="advantages-list three-list">
@@ -182,7 +182,12 @@
 
             <li class="advantages-list-team">
               <div class="img-container-one">
-                <img src="./images/foto-img2.jpg" alt="Tom Ford" width="264" />
+                <img
+                  src="./images/foto-img2.jpg"
+                  srcset="./images/tom@2x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
               </div>
               <div class="section-three-text">
                 <h3 class="advantages title-text-three">Tom Ford</h3>
@@ -224,6 +229,7 @@
               <div class="img-container-one">
                 <img
                   src="./images/foto-img3.jpg"
+                  srcset="./images/camila@2x.jpg"
                   alt="Camila Garcia"
                   width="264"
                 />
@@ -268,6 +274,7 @@
               <div class="img-container-one">
                 <img
                   src="./images/foto-img4.jpg"
+                  srcset="./images/danial@2x.jpg"
                   alt="Daniel Wilson"
                   width="264"
                 />
@@ -309,10 +316,10 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
-    <!--portfolio-->
-    <!--<section class="section section-four">
+      <!--portfolio-->
+      <section class="section section-four">
         <div class="container">
           <h2 class="title our-portfolio-title">Our Portfolio</h2>
           <ul class="advantages-list section-portfolio-list">
@@ -358,11 +365,33 @@
             </li>
             <li class="section-four-list-item">
               <div class="img-portfolio-two">
-                <img
-                  src="./images/portfolio/portf-2.jpg"
-                  alt="portfolio-2"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/cach-mob-min-min.jpg 1x,
+                      ./images/portfolio/cach-mob@2x-min.jpg  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/cach-tab-min-min.jpg 1x,
+                      ./images/portfolio/cach-tab@2x-min.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/cach-desk-min-min.jpg 1x,
+                      ./images/portfolio/cach-desk@2x-min.jpg  2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/cach-mob-min-min.jpg "
+                    alt="portfolio picture"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -376,11 +405,33 @@
             </li>
             <li class="section-four-list-item">
               <div class="img-portfolio-two">
-                <img
-                  src="./images/portfolio/portf-3.jpg"
-                  alt="portfolio-3"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/medit-mob-min-min.jpg 1x,
+                      ./images/portfolio/medit-mob@2x-min.jpg  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/cach-tab-min-min.jpg 1x,
+                      ./images/portfolio/cach-tab@2x-min.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/medit-desk-min-min.jpg 1x,
+                      ./images/portfolio/medit-desk@2x-min.jpg  2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/medit-mob-min-min.jpg "
+                    alt="portfolio picture"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -394,11 +445,33 @@
             </li>
             <li class="section-four-list-item">
               <div class="img-portfolio-two">
-                <img
-                  src="./images/portfolio/portf-4.jpg"
-                  alt="portfolio-4"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/taxi-mob-min-min.jpg 1x,
+                      ./images/portfolio/taxi-mob@2x-min.jpg  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/taxi-tab-min-min.jpg 1x,
+                      ./images/portfolio/taxi-tab@2x-min.jpg  2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/taxi-desk-mini-min.jpg 1x,
+                      ./images/portfolio/taxi-desk@2x-min.jpg   2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/taxi-mob-min-min.jpg "
+                    alt="portfolio picture"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -412,11 +485,33 @@
             </li>
             <li class="section-four-list-item">
               <div class="img-portfolio-two">
-                <img
-                  src="./images/portfolio/portf-5.jpg"
-                  alt="portfolio-5"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/screen-mob-min-min.jpg 1x,
+                      ./images/portfolio/screen-mob@2x-min.jpg  2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/screen-tab-mini-min.jpg 1x,
+                      ./images/portfolio/screen-tab@2x-min.jpg   2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/screen-desk-mini-min.jpg 1x,
+                      ./images/portfolio/screen-desk@2x-min.jpg   2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/screen-mob-min-min.jpg"
+                    alt="portfolio picture"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -430,11 +525,33 @@
             </li>
             <li class="section-four-list-item">
               <div class="img-portfolio-two">
-                <img
-                  src="./images/portfolio/portf-6.jpg"
-                  alt="portfolio-6"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/onli-mob-mini-min.jpg 1x,
+                      ./images/portfolio/onli-mob@2x-min.jpg   2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/onli-tab-mini-min.jpg 1x,
+                      ./images/portfolio/onli-tab@2x-min.jpg   2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/onli-desk-mini-min.jpg 1x,
+                      ./images/portfolio/onli-desk@2x-min.jpg   2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/onli-mob-mini-min.jpg"
+                    alt="portfolio picture"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -448,9 +565,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!--</main> -->
-    <!--<footer class="footer">
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container footer-container-one">
         <div class="footer-container">
           <a href="./index.html" class="logo-list"
@@ -515,7 +632,7 @@
           </form>
         </div>
       </div>
-    </footer>-->
+    </footer>
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
