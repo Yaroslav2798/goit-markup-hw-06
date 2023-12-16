@@ -22,18 +22,28 @@
   </head>
   <body>
     <!-- шапка веб сторінки -->
-    <header class="header-container-box">
+    <!--<header class="header-container-box">
       <div class="container header-container">
         <nav class="nav-link">
           <a href="./index.html" class="logo-web"
             >WeB<span class="logo-studio">Studio</span></a
           >
           <ul class="page-nav">
-            <li><a href="./index.html" class="current">Studio</a></li>
+            <li><a href="./index.html" class="nav current">Studio</a></li>
             <li><a href="" class="nav">Portfolio</a></li>
             <li><a href="" class="nav">Contacts</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-open-btn">
+          <svg
+            class="mobile-menu-open-btn-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-heroicons-solid_menu "></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-link">
             <li>
@@ -49,19 +59,19 @@
           </ul>
         </address>
       </div>
-    </header>
+    </header>-->
 
     <!--основний вміст-->
-    <main>
+    <!--<main>
       <section class="section-hero section">
         <div class="container">
           <h1 class="hero">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
-      </section>
+      </section>-->
 
-      <!--Особливі критерії  -->
-      <section class="section section-two">
+    <!--Особливі критерії  -->
+    <!--<section class="section section-two">
         <div class="container">
           <h2 class="title visually-hidden">Advantages</h2>
           <ul class="advantages-list excellence-list">
@@ -118,17 +128,18 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <!--КОМАНДА-->
-      <section class="team section">
-        <div class="container">
+    <!--КОМАНДА-->
+    <!--<section class="team section">
+        <div class="container team-container">
           <h2 class="title our-team">Our Team</h2>
           <ul class="advantages-list three-list">
             <li class="advantages-list-team">
               <div class="img-container-one">
                 <img
                   src="./images/foto-img1.jpg"
+                  srcset="./images/mark@2x.jpg"
                   alt="Mark Guerrero"
                   width="264"
                 />
@@ -298,21 +309,42 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <!--portfolio-->
-      <section class="section section-four">
+    <!--portfolio-->
+    <!--<section class="section section-four">
         <div class="container">
           <h2 class="title our-portfolio-title">Our Portfolio</h2>
           <ul class="advantages-list section-portfolio-list">
             <li class="section-four-list-item">
               <div class="img-portfolio-two">
-                <img
-                  src="./images/portfolio/portf-1.jpg"
-                  alt="portfolio-1"
-                  width="360"
-                />
-
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/bank-desk-min.jpg    1x,
+                      ./images/portfolio/bank-desk@2x-min.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/bank-tab-min.jpg    1x,
+                      ./images/portfolio/bank-tab@2x-min.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/bank-mob-min.jpg    1x,
+                      ./images/portfolio/bank-mob@2x-min.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/bank-mob-min.jpg"
+                    alt="portfolio picture"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -416,10 +448,9 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+      </section> -->
+    <!--</main> -->
+    <!--<footer class="footer">
       <div class="container footer-container-one">
         <div class="footer-container">
           <a href="./index.html" class="logo-list"
@@ -430,7 +461,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-container">
+        <div class="footer-container footer-container-social">
           <p class="social-media">Social media</p>
           <ul class="social-network-link footer-social-media">
             <li class="team-social-network">
@@ -484,7 +515,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer>-->
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
@@ -598,12 +629,86 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="accent-color" href="">Privacy Policy</a></label
+              <span>
+                I accept the terms and conditions of the
+                <a class="accent-color" href="">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="review-form-submit-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!-------- MOBILE MENU------->
+    <div class="mobile-menu-wrapper">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg
+            class="mobile-menu-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="mobile menu close icon"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item link active-mobile">Studio</li>
+            <li class="mobile-menu-item link">Portfolio</li>
+            <li class="mobile-menu-item link">Contacts</li>
+          </ul>
+        </nav>
+        <div class="mobile-box">
+          <address class="address-menu">
+            <ul class="address-link-menu">
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="address-menu active-mobile link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="address-menu link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-network-container-menu">
+            <ul class="social-network-menu">
+              <li class="icon-social-menu">
+                <a class="social-network-menu-icon" href="">
+                  <svg class="icon-two" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social-menu">
+                <a class="social-network-menu-icon" href="">
+                  <svg class="icon-two" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social-menu">
+                <a class="social-network-menu-icon" href="">
+                  <svg class="icon-two" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-social-menu">
+                <a class="social-network-menu-icon" href="">
+                  <svg class="icon-two" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
